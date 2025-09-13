@@ -27,6 +27,7 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/85d361ab4cb65110
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/86b7b7e2aa7e38f328902.jpg")
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://envs.sh/bQE.jpg'))
 CODE = (environ.get('CODE', 'https://envs.sh/tYV.jpg'))
+FORCESUB_IMG = environ.get("FORCESUB_IMG", "https://envs.sh/bEB.jpg")
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'aklinkpays.in'))
