@@ -66,10 +66,7 @@ Bʏ @AKIMAX"""
 2) ᴛʏᴘᴇ ɴᴀᴍᴇ ᴡɪᴛʜ ʏᴇᴀʀ
 
 3) ᴍᴏᴠɪᴇ ɪs ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ᴛʜᴇ ᴅᴀᴛᴀʙᴀsᴇ 
-   ʀᴇᴘᴏʀᴛ ᴛᴏ ᴀᴅᴍɪɴs IN SUPPORT GROUP 
-   TYPE MESSAGE IN GROUP 
-   #ʀᴇǫᴜᴇꜱᴛ MOVIE NAME WITH YEAR 👇👇👇
-   @akDiscussion_group</b>"""
+   ʀᴇᴘᴏʀᴛ ᴛᴏ ᴀᴅᴍɪɴs @akDiscussion_group</b>"""
 
     I_CUD_NT = """<b>ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}.
 
@@ -80,10 +77,7 @@ Bʏ @AKIMAX"""
 2) ᴛʏᴘᴇ ɴᴀᴍᴇ ᴡɪᴛʜ ʏᴇᴀʀ
 
 3) ᴍᴏᴠɪᴇ ɪs ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ᴛʜᴇ ᴅᴀᴛᴀʙᴀsᴇ 
-   ʀᴇᴘᴏʀᴛ ᴛᴏ ᴀᴅᴍɪɴs IN SUPPORT GROUP 
-   TYPE MESSAGE IN GROUP 
-   #ʀᴇǫᴜᴇꜱᴛ MOVIE NAME WITH YEAR 👇👇👇
-   @akDiscussion_group</b>"""
+   ʀᴇᴘᴏʀᴛ ᴛᴏ ᴀᴅᴍɪɴs @akDiscussion_group</b>"""
 
     MVE_NT_FND = """<b>ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}.
 
@@ -94,10 +88,7 @@ Bʏ @AKIMAX"""
 2) ᴛʏᴘᴇ ɴᴀᴍᴇ ᴡɪᴛʜ ʏᴇᴀʀ
 
 3) ᴍᴏᴠɪᴇ ɪs ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ᴛʜᴇ ᴅᴀᴛᴀʙᴀsᴇ 
-   ʀᴇᴘᴏʀᴛ ᴛᴏ ᴀᴅᴍɪɴs IN SUPPORT GROUP 
-   TYPE MESSAGE IN GROUP 
-   #ʀᴇǫᴜᴇꜱᴛ MOVIE NAME WITH YEAR 👇👇👇
-   @akDiscussion_group</b>"""
+   ʀᴇᴘᴏʀᴛ ᴛᴏ ᴀᴅᴍɪɴs @akDiscussion_group</b>"""
     
 
     TOP_ALRT_MSG = """ꜱᴇᴀʀᴄʜɪɴɢ ꜰᴏʀ ǫᴜᴇʀʏ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀꜱᴇ..."""
