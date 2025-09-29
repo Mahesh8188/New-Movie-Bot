@@ -30,9 +30,9 @@ CODE = (environ.get('CODE', 'https://envs.sh/tYV.jpg'))
 FORCESUB_IMG = environ.get("FORCESUB_IMG", "https://envs.sh/bEB.jpg")
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', ''))
-STREAM_API = (environ.get('STREAM_API', ''))
-STREAMHTO = (environ.get('STREAMHTO', ''))
+STREAM_SITE = (environ.get('STREAM_SITE', 'aklinkpays.in'))
+STREAM_API = (environ.get('STREAM_API', '1492d7161b70dea738aa23dcb3163be93b624a6d'))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/c/2437541681/364'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6859451629 7386197638').split()]
