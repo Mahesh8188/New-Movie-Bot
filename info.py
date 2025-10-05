@@ -31,7 +31,7 @@ FORCESUB_IMG = environ.get("FORCESUB_IMG", "https://envs.sh/bEB.jpg")
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'aklinkpays.in'))
-STREAM_API = (environ.get('STREAM_API', '1492d7161b70dea738aa23dcb3163be93b624a6d'))
+STREAM_API = (environ.get('STREAM_API', '8e5e97716bc48d606a70a946edeb75019cba0ff5'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/c/2437541681/364'))
 
 # Admins, Channels & Users
@@ -65,7 +65,7 @@ HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/c/2437541681/364') # How 
 # Others
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE',True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'aklinkpays.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '1492d7161b70dea738aa23dcb3163be93b624a6d')
+SHORTLINK_API = environ.get('SHORTLINK_API', '8e5e97716bc48d606a70a946edeb75019cba0ff5')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))  # else--> True
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "8")
