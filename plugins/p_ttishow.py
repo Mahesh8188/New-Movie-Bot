@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
 from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, MELCOW_NEW_USERS, MELCOW_VID, CHNL_LNK, GRP_LNK
 from database.users_chats_db import db
-from database.ia_filterdb import Media, get_files_db_size
+from database.ia_filterdb import Media
 from utils import get_size, temp, get_settings
 from Script import script
 from pyrogram.errors import ChatAdminRequired
@@ -152,20 +152,18 @@ async def re_enable_chat(bot, message):
     temp.BANNED_CHATS.remove(int(chat_))
     await message.reply("Chat Successfully re-enabled")
 
-
-@Client.on_message(filters.command('stats') & filters.user(ADMINS) & filters.incoming)
+@Client.on_message(filters.command('stats') & filters.incoming)
 async def get_ststs(bot, message):
-    users = await db.total_users_count()
-    groups = await db.total_chat_count()
-    size = get_size(await db.get_db_size())
-    free = get_size(536870912)
+    rju = await message.reply('Fetching stats..')
+    total_users = await db.total_users_count()
+    totl_chats = await db.total_chat_count()
     files = await Media.count_documents()
-    db2_size = get_size(await get_files_db_size())
-    db2_free = get_size(536870912)
-    uptime = time.strftime("%Hh %Mm %Ss", time.gmtime(time.time() - time.time()))
-    ram = psutil.virtual_memory().percent
-    cpu = psutil.cpu_percent()
-    await message.reply_text(script.STATUS_TXT.format(users, groups, size, free, files, db2_size, db2_free, uptime, ram, cpu))
+    size = await db.get_db_size()
+    free = 536870912 - size
+    size = get_size(size)
+    free = get_size(free)
+    await rju.edit(script.STATUS_TXT.format(files, total_users, totl_chats, size, free))
+    
 @Client.on_message(filters.command('invite') & filters.user(ADMINS))
 async def gen_invite(bot, message):
     if len(message.command) == 1:
