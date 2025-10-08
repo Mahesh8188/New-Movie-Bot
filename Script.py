@@ -32,13 +32,7 @@ class script(object):
 <u>🗳 ᴅᴀᴛᴀʙᴀsᴇ 2 🗳</u></b>
 
 » ᴛᴏᴛᴀʟ ꜰɪʟᴇs - <code>{}</code>
-» ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ - <code>{} / {}</code>
-
-<u>🤖 ʙᴏᴛ ᴅᴇᴛᴀɪʟs 🤖</u>
-
-» ᴜᴘᴛɪᴍᴇ - <code>{}</code>
-» ʀᴀᴍ - <code>{}%</code>
-» ᴄᴘᴜ - <code>{}%</code></b>"""
+» ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ - <code>{} / {}</code></b>"""
 
     LOG_TEXT_G = """#NewGroup
     
