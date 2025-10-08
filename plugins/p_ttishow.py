@@ -153,19 +153,19 @@ async def re_enable_chat(bot, message):
     await message.reply("Chat Successfully re-enabled")
 
 
-@Client.on_message(filters.command('stats') & filters.incoming)
+@Client.on_message(filters.command('stats') & filters.user(ADMINS) & filters.incoming)
 async def get_ststs(bot, message):
-    rju = await message.reply('Fetching stats..')
-    total_users = await db.total_users_count()
-    totl_chats = await db.total_chat_count()
+    users = await db.total_users_count()
+    groups = await db.total_chat_count()
+    size = get_size(await db.get_db_size())
+    free = get_size(536870912)
     files = await Media.count_documents()
-    size = await db.get_db_size()
-    free = 536870912 - size
-    size = get_size(size)
-    free = get_size(free)
-    await rju.edit(script.STATUS_TXT.format(files, total_users, totl_chats, size, free))
-
-
+    db2_size = get_size(await get_files_db_size())
+    db2_free = get_size(536870912)
+    uptime = time.strftime("%Hh %Mm %Ss", time.gmtime(time.time() - time.time()))
+    ram = psutil.virtual_memory().percent
+    cpu = psutil.cpu_percent()
+    await message.reply_text(script.STATUS_TXT.format(users, groups, size, free, files, db2_size, db2_free, uptime, ram, cpu))
 @Client.on_message(filters.command('invite') & filters.user(ADMINS))
 async def gen_invite(bot, message):
     if len(message.command) == 1:
