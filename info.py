@@ -60,7 +60,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'lazyfilesx')
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', True)) # Set True or False
 
 # If Multiple Database Is True Then Fill All Three Below Database Uri Else You Will Get Error.
-F_DB_URI = environ.get('F_DB_URI', "mongodb+srv://crazygaming4694:crazygaming4694@cluster0.v77dv.mongodb.net/?retryWrites=true&w=majority")   # This Db Is For File Data Store
+F_DB_URI = environ.get('F_DB_URI', "mongodb+srv://vanibo2187:vanibo2187@cluster0.ienqvps.mongodb.net/?retryWrites=true&w=majority")   # This Db Is For File Data Store
 S_DB_URI = environ.get('S_DB_URI', "mongodb+srv://bharvadboy747:bharvadboy747@cluster0.ru582.mongodb.net/?retryWrites=true&w=majority")   # This Db is for File Data Store When First Db Is Going To Be Full.
 
 
